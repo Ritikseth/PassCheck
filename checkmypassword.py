@@ -2,6 +2,8 @@ import requests
 import hashlib
 import sys
 
+'''Unsafest Password Checker'''
+
 def request_api_data(query_char):
 	url = 'https://api.pwnedpasswords.com/range/' + query_char
 	res = requests.get(url)
@@ -32,6 +34,6 @@ def main(args):
 		else:
 			print(f'{password} was NOT found...carry on with this!!')
 	return 'done!'
-	
+
 if __name__ == '__main__':
 	sys.exit(main(sys.argv[1:]))
