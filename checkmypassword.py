@@ -1,9 +1,13 @@
 import requests
 import hashlib
 import sys
+<<<<<<< Updated upstream
 
 '''Safest Password Checker'''
 
+=======
+'''UnSafest password checker'''
+>>>>>>> Stashed changes
 def request_api_data(query_char):
 	url = 'https://api.pwnedpasswords.com/range/' + query_char
 	res = requests.get(url)
