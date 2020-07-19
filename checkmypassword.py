@@ -2,7 +2,6 @@ import requests
 import hashlib
 import sys
 
-
 '''Safest Password Checker'''
 
 def request_api_data(query_char):
